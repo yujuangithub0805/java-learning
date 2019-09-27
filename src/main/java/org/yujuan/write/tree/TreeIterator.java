@@ -5,43 +5,43 @@ package org.yujuan.write.tree;
  *
  * @param <E> the type parameter
  * @author yujuan
- * @time 2019 /09/26 13:49:22
+ * @time 2019 /09/26 18:00:21
  */
 public interface TreeIterator<E> {
 
     /**
-     * Gets preorder iterator.
+     * Gets pre order iterator.
      *
-     * @return the preorder iterator
+     * @return the pre order iterator
      * @author yujuan
-     * @time 2019 /09/26 13:49:22
+     * @time 2019 /09/26 18:00:21
      */
-    Iterable<E> getPreorderIterator();
+    Iterable<E> getPreOrderIterator();
 
     /**
-     * Gets postorder iterator.
+     * Gets post order iterator.
      *
-     * @return the postorder iterator
+     * @return the post order iterator
      * @author yujuan
-     * @time 2019 /09/26 13:49:22
+     * @time 2019 /09/26 18:00:21
      */
-    Iterable<E> getPostorderIterator();
+    Iterable<E> getPostOrderIterator();
 
     /**
-     * Gets inorder iterator.
+     * Gets in order iterator.
      *
-     * @return the inorder iterator
+     * @return the in order iterator
      * @author yujuan
-     * @time 2019 /09/26 13:49:22
+     * @time 2019 /09/26 18:00:21
      */
-    Iterable<E> getInorderIterator();
+    Iterable<E> getInOrderIterator();
 
     /**
      * Gets level order iterator.
      *
      * @return the level order iterator
      * @author yujuan
-     * @time 2019 /09/26 13:49:22
+     * @time 2019 /09/26 18:00:21
      */
     Iterable<E> getLevelOrderIterator();
 

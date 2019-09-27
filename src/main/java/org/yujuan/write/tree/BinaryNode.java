@@ -84,11 +84,26 @@ public class BinaryNode<E> implements BinaryNodeInterface<E>, Serializable {
 
     @Override
     public int getHeight() {
-        return getHeight(this);
+        return this.getHeight(this);
+    }
+
+    private int getHeight(BinaryNode<E> node) {
+        int height = 0;
+        if (node != null) {
+            height = 1 + Math.max(node.getHeight(node.left), node.getHeight(node.right));
+        }
+        return height;
     }
 
     @Override
     public BinaryNodeInterface<E> copy() {
-        return null;
+        BinaryNode<E> newRoot = new BinaryNode<>(data);
+        if (left != null) {
+            newRoot.left = (BinaryNode<E>) left.copy();
+        }
+        if (right != null) {
+            newRoot.right = (BinaryNode<E>) right.copy();
+        }
+        return newRoot;
     }
 }
