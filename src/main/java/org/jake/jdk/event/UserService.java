@@ -7,7 +7,7 @@ public class UserService {
     private List<UserListener> listenerList = new ArrayList<>();
 
     public void register(User user) {
-        ClassCastException
+
         System.out.println("user=" + user.getUserName() + " , password=" + user.getPassword() + " ,注册成功");
         publishEvent(new SendSmsEvent(user));
     }
