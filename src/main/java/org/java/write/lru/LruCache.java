@@ -82,10 +82,11 @@ public class LruCache<K, V> {
         if (first == node) {
             return;
         }
-        //判断当前节点的下一节点是否为空 不为空的话
+        //删除当前节点
         if (node.next != null) {
             node.next.pre = node.pre;
         }
+        //自行想一下链表的结构
         if (node.pre != null) {
             node.pre.next = node.next;
         }
