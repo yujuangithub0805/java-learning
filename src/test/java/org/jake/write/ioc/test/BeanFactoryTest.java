@@ -2,7 +2,6 @@ package org.jake.write.ioc.test;
 
 import org.jake.write.ioc.*;
 import org.junit.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 
 public class BeanFactoryTest {
     private String className = "org.jake.write.ioc.test.HelloWorld";
@@ -12,7 +11,6 @@ public class BeanFactoryTest {
     private String value = "测试";
 
     private String name = "hello";
-
 
     @Test
     public void test() throws Exception {
